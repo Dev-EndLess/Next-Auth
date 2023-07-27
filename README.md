@@ -5,8 +5,6 @@
 
 ## With Next.js App Router
 
----
-
 ### 📚 References
 
 #### Login Authentication
@@ -18,6 +16,6 @@
 
 #### Authorization & Access Control
 
-- 🔗 [Role-based access control] (https://authjs.dev/guides/basics/role-based-access-control#persisting-the-role)
-- 🔗 [Module Augmentation] (https://next-auth.js.org/getting-started/typescript#module-augmentation)
-- 🔗 [Middleware Auth] (https://next-auth.js.org/configuration/nextjs#advanced-usage)
+- 🔗 [Role-based access control](https://authjs.dev/guides/basics/role-based-access-control#persisting-the-role)
+- 🔗 [Module Augmentation](https://next-auth.js.org/getting-started/typescript#module-augmentation)
+- 🔗 [Middleware Auth](https://next-auth.js.org/configuration/nextjs#advanced-usage)
