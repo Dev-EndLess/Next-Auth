@@ -37,7 +37,7 @@ export const options: NextAuthOptions = {
         // to verify with credentials
         // Docs: https://next-auth.js.org/configuration/providers/credentials
         // Usually you wanna take user from database
-        const user = { id: "35", name: "Endless", password: "nextauth", role: "admin"}; // hardcoded user
+        const user = { id: "35", name: "Endless", password: "nextauth", role: "manager"}; // hardcoded user
 
         if (
           credentials?.username === user.name &&
