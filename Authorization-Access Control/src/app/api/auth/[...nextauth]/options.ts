@@ -1,13 +1,22 @@
 import type { NextAuthOptions } from "next-auth";
 import GitHubProvider from "next-auth/providers/github";
-import GoogleProvider from "next-auth/providers/google"
 import CredentialsProvider from "next-auth/providers/credentials";
+import { GithubProfile } from "next-auth/providers/github";
 
 export const options: NextAuthOptions = {
   providers: [
     GitHubProvider({
-      clientId: process.env.GITHUB_CLIENT_ID as string,
-      clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
+        profile(profile: GithubProfile) {
+            //console.log(profile)
+            return {
+                ...profile,
+                role: profile.role ?? "user",
+                id: profile.id.toString(),
+                image: profile.avatar_url,
+            }
+        },
+        clientId: process.env.GITHUB_CLIENT_ID as string,
+        clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
     }),
     CredentialsProvider({
       name: "Credentials",
@@ -21,14 +30,14 @@ export const options: NextAuthOptions = {
           label: "password",
           type: "password",
           placeholder: "your-password",
-        }
+        },
       },
       async authorize(credentials) {
         // This is where you need to retrieve user data
         // to verify with credentials
         // Docs: https://next-auth.js.org/configuration/providers/credentials
         // Usually you wanna take user from database
-        const user = { id: "35", name: "Endless", password: "nextauth" }; // hardcoded user
+        const user = { id: "35", name: "Endless", password: "nextauth", role: "admin"}; // hardcoded user
 
         if (
           credentials?.username === user.name &&
@@ -41,4 +50,16 @@ export const options: NextAuthOptions = {
       },
     }),
   ],
+  callbacks: {
+    // Ref: https://authjs.dev/guides/basics/role-based-access-control#persisting-the-role
+    async jwt({ token, user }) {
+        if (user) token.role = user.role
+        return token
+    },
+    // If you want to use the role in client components
+    async session({ session, token }) {
+        if (session?.user) session.user.role = token.role
+        return session
+    },
+}
 };
