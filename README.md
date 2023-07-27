@@ -8,7 +8,16 @@
 ---
 
 ### 📚 References
+
+#### Login Authentication
+
 - 🔗 [Getting Started](https://next-auth.js.org/getting-started/example)
 - 🔗 [Options](https://next-auth.js.org/configuration/options)
 - 🔗 [Credentials](https://next-auth.js.org/configuration/providers/credentials)
 - 🔗 [GitHub Configuration](https://next-auth.js.org/providers/github)
+
+#### Authorization & Access Control
+
+- 🔗 [Role-based access control] (https://authjs.dev/guides/basics/role-based-access-control#persisting-the-role)
+- 🔗 [Module Augmentation] (https://next-auth.js.org/getting-started/typescript#module-augmentation)
+- 🔗 [Middleware Auth] (https://next-auth.js.org/configuration/nextjs#advanced-usage)
