@@ -1,8 +1,8 @@
 # Next-Auth
 
-- ### Login Authentication <a href="https://youtu.be/w2h54xz6Ndw" target="_blank"> <img width=28 height="20" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png"/></a>  
+### <a href="https://youtu.be/w2h54xz6Ndw" target="_blank"> <img width=28 height="18" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png"/></a> Login Authentication 
 
-- ### User Authorization & Access Control <a href="https://www.youtube.com/watch?v=ay-atEUGIc4" target="_blank"> <img width=28 height="20" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png"/></a>  
+### <a href="https://www.youtube.com/watch?v=ay-atEUGIc4" target="_blank"> <img width=28 height="18" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png"/></a> User Authorization & Access Control
 
 ## 📚 References
 
