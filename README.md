@@ -1,11 +1,10 @@
-# NextAuth.js Login Authentication
-### Description
+# Next-Auth
 
-📺 [YouTube Video](https://youtu.be/w2h54xz6Ndw) for this repository.
+- ### Login Authentication <a href="https://youtu.be/w2h54xz6Ndw" target="_blank"> <img width=28 height="20" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png"/></a>  
 
-## With Next.js App Router
+- ### User Authorization & Access Control <a href="https://www.youtube.com/watch?v=ay-atEUGIc4" target="_blank"> <img width=28 height="20" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png"/></a>  
 
-### 📚 References
+## 📚 References
 
 #### Login Authentication
 
@@ -19,3 +18,6 @@
 - 🔗 [Role-based access control](https://authjs.dev/guides/basics/role-based-access-control#persisting-the-role)
 - 🔗 [Module Augmentation](https://next-auth.js.org/getting-started/typescript#module-augmentation)
 - 🔗 [Middleware Auth](https://next-auth.js.org/configuration/nextjs#advanced-usage)
+
+
+<p align="center">Youtube Tutorial by <strong>Dave Gray</strong> </p>
